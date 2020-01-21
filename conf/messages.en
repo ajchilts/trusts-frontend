@@ -485,6 +485,8 @@ trusteeLiveInTheUK.heading = Does {0} live in the UK?
 trusteeLiveInTheUK.checkYourAnswersLabel = Does {0} live in the UK?
 trusteeLiveInTheUK.error.required = Select yes if the trustee lives in the UK
 
+trusteeOrganisationAddressInUK.checkYourAnswersLabel = Is {0}’s address in the UK?
+
 leadTrusteeLiveInTheUK.title = Does the lead trustee live in the UK?
 leadTrusteeLiveInTheUK.error.required = Select yes if the lead trustee lives in the UK
 
