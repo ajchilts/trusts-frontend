@@ -16,6 +16,7 @@
 
 package utils.print.playback.sections.trustees.lead_trustee
 
+import models.core.pages.IndividualOrBusiness.{Business, Individual}
 import models.playback.UserAnswers
 import pages.register.CorrespondenceAddressPage
 import pages.register.trustees._
@@ -31,14 +32,21 @@ trait LeadTrustee {
                      countryOptions: CountryOptions,
                      name: String)(implicit messages: Messages): Seq[Option[AnswerRow]] = {
 
+
+    val addressKey = userAnswers.get(TrusteeIndividualOrBusinessPage(index)) match {
+      case Some(Individual) => "trusteeLiveInTheUK"
+      case Some(Business) => "trusteeOrganisationAddressInUK"
+    }
+
     userAnswers.get(TrusteeAddressPage(index)) match {
       case Some(_) =>
         Seq(
-          yesNoQuestion(TrusteeAddressInTheUKPage(index), userAnswers, "trusteeLiveInTheUK", name),
+          yesNoQuestion(TrusteeAddressInTheUKPage(index), userAnswers, addressKey, name),
           addressQuestion(TrusteeAddressPage(index), userAnswers, "trusteesUkAddress", name, countryOptions)
         )
       case _ =>
         Seq(
+          yesNoQuestion(TrusteeAddressInTheUKPage(index), userAnswers, addressKey, name),
           addressQuestion(CorrespondenceAddressPage, userAnswers, "trusteesUkAddress", name, countryOptions)
         )
     }

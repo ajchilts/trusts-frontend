@@ -73,6 +73,7 @@ class TrusteesPrintPlaybackHelperSpec extends PlaybackSpecBase with AnswerSectio
         _ <- TrusteesNamePage(0) is FullName("William", None, "Bonny")
         _ <- TrusteesDateOfBirthPage(0) is LocalDate.parse("1975-01-23")
         _ <- TrusteeAddressYesNoPage(0).isRemoved
+        _ <- TrusteeAddressInTheUKPage(0) is false
         _ <- TrusteesInternationalAddressPage(0) is InternationalAddress("Address 1", "Address 2", None, "DE")
         _ <- TelephoneNumberPage(0) is "67676767676"
         _ <- TrusteeEmailYesNoPage(0) is true
@@ -110,7 +111,7 @@ class TrusteesPrintPlaybackHelperSpec extends PlaybackSpecBase with AnswerSectio
         _ <- TrusteesDateOfBirthPage(0) is LocalDate.parse("1975-01-23")
         _ <- TrusteesNinoPage(0) is "AA111111A"
         _ <- TrusteeAddressYesNoPage(0).isRemoved
-        _ <- TrusteeAddressInTheUKPage(0).isRemoved
+        _ <- TrusteeAddressInTheUKPage(0) is true
         _ <- TrusteesUkAddressPage(0).isRemoved
         _ <- CorrespondenceAddressPage is UKAddress("Address 1", "Address 2", None, None, "AA11 1AA")
         _ <- TelephoneNumberPage(0) is "67676767676"
@@ -127,6 +128,7 @@ class TrusteesPrintPlaybackHelperSpec extends PlaybackSpecBase with AnswerSectio
         "What is Wild Bill Hickock’s date of birth?" -> Html("23 January 1975"),
         "Is Wild Bill Hickock a UK citizen?"-> Html("Yes"),
         "What is Wild Bill Hickock’s National Insurance number?" -> Html("AA 11 11 11 A"),
+        "Does Wild Bill Hickock live in the UK?" -> Html("Yes"),
         "What is Wild Bill Hickock’s address?" -> Html("Address 1<br />Address 2<br />AA11 1AA"),
         "Do you know Wild Bill Hickock’s email address?" -> Html("Yes"),
         "What is Wild Bill Hickock’s email address?" -> Html("aa@aabb.com"),
@@ -159,7 +161,7 @@ class TrusteesPrintPlaybackHelperSpec extends PlaybackSpecBase with AnswerSectio
         "What is the business’s name?" -> Html("Lead Trustee Company"),
         "Is this trustee a UK registered company?"-> Html("Yes"),
         "What is Lead Trustee Company’s Unique Taxpayer Reference (UTR) number?" -> Html("1234567890"),
-        "Does Lead Trustee Company live in the UK?" -> Html("Yes"),
+        "Is Lead Trustee Company’s address in the UK?" -> Html("Yes"),
         "What is Lead Trustee Company’s address?" -> Html("Address 1<br />Address 2<br />AA11 1AA"),
         "Do you know Lead Trustee Company’s email address?" -> Html("No"),
         "What is Lead Trustee Company’s telephone number?" -> Html("67676767676")
@@ -177,7 +179,7 @@ class TrusteesPrintPlaybackHelperSpec extends PlaybackSpecBase with AnswerSectio
         _ <- TrusteeUtrYesNoPage(0) is true
         _ <- TrusteesUtrPage(0) is "1234567890"
         _ <- TrusteeAddressYesNoPage(0).isRemoved
-        _ <- TrusteeAddressInTheUKPage(0).isRemoved
+        _ <- TrusteeAddressInTheUKPage(0) is true
         _ <- TrusteesUkAddressPage(0).isRemoved
         _ <- CorrespondenceAddressPage is UKAddress("Address 1", "Address 2", None, None, "AA11 1AA")
         _ <- TrusteeEmailYesNoPage(0) is true
@@ -193,6 +195,7 @@ class TrusteesPrintPlaybackHelperSpec extends PlaybackSpecBase with AnswerSectio
         "What is the business’s name?" -> Html("Lead Trustee Company"),
         "Is this trustee a UK registered company?"-> Html("Yes"),
         "What is Lead Trustee Company’s Unique Taxpayer Reference (UTR) number?" -> Html("1234567890"),
+        "Is Lead Trustee Company’s address in the UK?" -> Html("Yes"),
         "What is Lead Trustee Company’s address?" -> Html("Address 1<br />Address 2<br />AA11 1AA"),
         "Do you know Lead Trustee Company’s email address?" -> Html("Yes"),
         "What is Lead Trustee Company’s email address?" -> Html("aa@aabb.com"),

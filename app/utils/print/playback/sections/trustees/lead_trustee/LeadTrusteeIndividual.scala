@@ -46,7 +46,8 @@ object LeadTrusteeIndividual extends LeadTrustee {
             Seq(
               yesNoQuestion(TrusteeEmailYesNoPage(index), userAnswers, "trusteeEmailAddressYesNo", name),
               stringQuestion(EmailPage(index), userAnswers, "trusteeEmailAddress", name),
-              stringQuestion(TelephoneNumberPage(index), userAnswers, "telephoneNumber", name)
+              stringQuestion(TelephoneNumberPage(index), userAnswers, "telephoneNumber", name),
+              yesNoQuestion(TrusteeAddressInTheUKPage(index), userAnswers, "trusteeLiveInTheUK", name)
             ).flatten,
             sectionKey = Some(messages("answerPage.section.trustees.heading"))
           )
