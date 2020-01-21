@@ -25,7 +25,7 @@ object RoleInCompany extends Enumerable.Implicits {
 
   case object Director extends WithName("Director") with RoleInCompany
   case object Employee extends WithName("Employee") with RoleInCompany
-  case object NA extends WithName("NA") with RoleInCompany
+  case object NA extends WithName("Not a Director or Employee") with RoleInCompany
 
   val values: List[RoleInCompany] = List(
     Director, Employee, NA
