@@ -23,10 +23,8 @@
 @main_template(
     title = messages("TrustLocked.title")
     ) {
-
     <span class="govuk-caption-xl">@messages("TrustLocked.subheading", utr)</span>
     @components.heading("TrustLocked.heading", headingSize = "heading-large govuk-fieldset__heading")
     <p>@messages("TrustLocked.p1")</p>
-    <p>@messages("TrustLocked.p2")</p>
-    <p>@messages("TrustLocked.p3") <a target="_blank" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/trusts">@messages("TrustLocked.link1")</a>.</p>
+    <p>@messages("TrustLocked.p2") <a target="_blank" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/trusts">@messages("TrustLocked.link1")</a>.</p>
 }

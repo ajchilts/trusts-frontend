@@ -307,35 +307,31 @@ UTRSentByPost.paragraph3 = You can
 UTRSentByPost.link.returnToRegister = return to register and maintain a trust for a client
 
 
-ClosedError.title = Sorry, you cannot access this trust
-ClosedError.heading = Sorry, you cannot access this trust
+ClosedError.title = You cannot access this trust online as it has been closed
+ClosedError.heading = You cannot access this trust online as it has been closed
 ClosedError.subheading = This trust’s UTR: {0}
-ClosedError.paragraph1 = You cannot make changes to this trust as it has been closed.
-ClosedError.paragraph2 = If this has been done in error or you need help with the service, please
+ClosedError.paragraph1 = If this has been done in error or you need help with the service, please
 ClosedError.contact.link = contact the trusts helpline (opens in a new window or tab)
-ClosedError.paragraph3 = to reopen the records. HMRC will contact you if a tax return is required or for any further information.
-ClosedError.paragraph4 = You can
+ClosedError.paragraph2 = to reopen the trust records. We will contact you or the lead trustee if a tax return is required or if we need more information.
+ClosedError.paragraph3 = You can
 ClosedError.return.link = return to register and maintain a trust for a client
 ClosedError.link.paragraph = If you need help with the service
 
-DoesNotMatchError.title = Sorry, you cannot access this trust
-DoesNotMatchError.heading = Sorry, you cannot access this trust
-DoesNotMatchError.subheading = This trust’s UTR: {0}
-DoesNotMatchError.paragraph1 = The Unique Taxpayer Reference (UTR) entered does not match our records.
-DoesNotMatchError.paragraph2 = Check you have entered the trust’s UTR correctly.
-DoesNotMatchError.paragraph3 = If you do not have a UTR for the trust you will need to register the trust first.
+DoesNotMatchError.title = The Unique Taxpayer Reference (UTR) you gave for the trust does not match our records
+DoesNotMatchError.heading = The Unique Taxpayer Reference (UTR) you gave for the trust does not match our records
+DoesNotMatchError.paragraph1 = Check you have entered the trust’s UTR correctly.
+DoesNotMatchError.paragraph2 = If you do not have a UTR for the trust you will need to register the trust first.
 DoesNotMatchError.paragraph4 = If you need help with the service
 DoesNotMatchError.paragraph5 = You can
 DoesNotMatchError.contact.link = contact the trusts helpline (opens in a new window or tab)
 DoesNotMatchError.return.link = return to register and maintain a trust for a client
 
-StillProcessingError.title = Sorry, you cannot access this trust
-StillProcessingError.heading = Sorry, you cannot access this trust
+StillProcessingError.title = We are processing the latest changes made to this trust
+StillProcessingError.heading = We are processing the latest changes made to this trust
 StillProcessingError.subheading = This trust’s UTR: {0}
-StillProcessingError.paragraph1 = HMRC is still processing changes recently made to this trust.
-StillProcessingError.paragraph2 = Try again later.
-StillProcessingError.paragraph3 = If you need help with the service
-StillProcessingError.paragraph4 = You can
+StillProcessingError.paragraph1 = Try again later.
+StillProcessingError.paragraph2 = If you need help with this service
+StillProcessingError.paragraph3 = You can
 StillProcessingError.contact.link = contact the trusts helpline (opens in a new window or tab)
 StillProcessingError.return.link = return to register and maintain a trust for a client
 
@@ -1506,11 +1502,10 @@ settlorInfo.bulletpoint8 = if it’s an employer-financed retirement scheme, and
 settlorInfo.bulletpoint9 = the business type (trading or investment) if the scheme’s settlor is a business
 settlorInfo.bulletpoint10 = if the business had existed for at least 2 years when any asset was added to the trust
 
-TrustLocked.title = Sorry, you cannot access this trust
-TrustLocked.heading = Sorry, you cannot access this trust
-TrustLocked.p1 = You have not passed the security questions asked by HMRC.
-TrustLocked.p2 = Try again in 30 minutes.
-TrustLocked.p3 = If you need help with the service
+TrustLocked.title = We are unable to match the information you gave to the trust register
+TrustLocked.heading = We are unable to match the information you gave to the trust register
+TrustLocked.p1 = Try again in 30 minutes.
+TrustLocked.p2 = If you need help with this service
 TrustLocked.link1 = contact the trusts helpline (opens in a new window or tab)
 TrustLocked.subheading = This trust’s UTR: {0}
 
@@ -1555,17 +1550,17 @@ trustNotClaimed.bullet.2.p3.a = contact the trusts helpline (opens in a new wind
 trustNotClaimed.bullet.2.p4 = You can
 trustNotClaimed.bullet.2.p4.a = return to register and maintain a trust for a client.
 
-agentNotAuthorised.title = Sorry, you cannot access this trust
-agentNotAuthorised.heading = Sorry, you cannot access this trust
+agentNotAuthorised.title = You have not yet been authorised by a trustee to access this trust
+agentNotAuthorised.heading = You have not yet been authorised by a trustee to access this trust
 agentNotAuthorised.subheading = This trust’s UTR: {0}
 agentNotAuthorised.p1 = The trustee who claimed the trust needs to give you authorisation.
 agentNotAuthorised.p2 = You can create an authorisation link to send to the trustee through
-agentNotAuthorised.p2.a = Agent Services.
+agentNotAuthorised.p2.a = Agent Services
 agentNotAuthorised.p3 = The trustee who claimed the trust must use the same Government Gateway account to approve your request.
 agentNotAuthorised.p4 = If you need help with this service
-agentNotAuthorised.p4.a = contact the trusts helpline (opens in a new window or tab).
+agentNotAuthorised.p4.a = contact the trusts helpline (opens in a new window or tab)
 agentNotAuthorised.p5 = You can
-agentNotAuthorised.p5.a = return to register and maintain a trust for a client.
+agentNotAuthorised.p5.a = return to register and maintain a trust for a client
 
 trustAlreadyClaimed.title = Sorry, you cannot access this trust
 trustAlreadyClaimed.heading = Sorry, you cannot access this trust
