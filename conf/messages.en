@@ -1532,23 +1532,23 @@ declarationWhatNext.closeTrust = Close the trust
 declarationWhatNext.checkYourAnswersLabel = What do you want to do next?
 declarationWhatNext.error.required = Select what you want to do next
 
-trustNotClaimed.title = Sorry, you cannot access this trust
-trustNotClaimed.heading = Sorry, you cannot access this trust
+trustNotClaimed.title = Your client must claim the trust and authorise your access
+trustNotClaimed.heading = Your client must claim the trust and authorise your access
 trustNotClaimed.subheading = This trust’s UTR: {0}
-trustNotClaimed.p1 = One of the trustees will need to complete the next 2 steps so you can maintain the trust online on their behalf.
-trustNotClaimed.bullet.1.title = Trustee needs to claim the trust
-trustNotClaimed.bullet.1.p1 = A trustee needs to log onto the Trust Registration Service using their Government Gateway account. The account they use must be an organisation account, not an individual account.
+trustNotClaimed.p1 = One of the trustees must complete these 2 steps so you can maintain the trust online on their behalf.
+trustNotClaimed.bullet.1.title = Trustee must claim the trust
+trustNotClaimed.bullet.1.p1 = A trustee needs to log onto the Register and Maintain a Trust Service using their Government Gateway account. The account they use must be an organisation account, not an individual account.
 trustNotClaimed.bullet.1.p2 = If they do not have an account, they can
-trustNotClaimed.bullet.1.p2.a = register for one here (opens in a new tab).
+trustNotClaimed.bullet.1.p2.a = register for one here (opens in a new tab)
 trustNotClaimed.bullet.1.p3 = The trustee needs to correctly answer questions about the trust so HMRC can prove the connection between the trustee and the trust.
 trustNotClaimed.bullet.1.p4 = The trustee must complete this step before you can request authorisation from them to maintain the trust.
-trustNotClaimed.bullet.2.title = Trustee needs to authorise your online access the trust
+trustNotClaimed.bullet.2.title = Trustee must authorise your online access the trust
 trustNotClaimed.bullet.2.p1 = Through Agent Services you can create an authorisation link to send to the trustee.
-trustNotClaimed.bullet.2.p2 = The trustee needs to use the same Government Gateway organisation account used to claim the trust to approve your request.
+trustNotClaimed.bullet.2.p2 = The trustee needs to use the same Government Gateway account used to claim the trust to approve your request.
 trustNotClaimed.bullet.2.p3 = If you need help with the service
-trustNotClaimed.bullet.2.p3.a = contact the trusts helpline (opens in a new window or tab).
+trustNotClaimed.bullet.2.p3.a = contact the trusts helpline (opens in a new window or tab)
 trustNotClaimed.bullet.2.p4 = You can
-trustNotClaimed.bullet.2.p4.a = return to register and maintain a trust for a client.
+trustNotClaimed.bullet.2.p4.a = return to register and maintain a trust for a client
 
 agentNotAuthorised.title = You have not yet been authorised by a trustee to access this trust
 agentNotAuthorised.heading = You have not yet been authorised by a trustee to access this trust
@@ -1562,10 +1562,10 @@ agentNotAuthorised.p4.a = contact the trusts helpline (opens in a new window or 
 agentNotAuthorised.p5 = You can
 agentNotAuthorised.p5.a = return to register and maintain a trust for a client
 
-trustAlreadyClaimed.title = Sorry, you cannot access this trust
-trustAlreadyClaimed.heading = Sorry, you cannot access this trust
+trustAlreadyClaimed.title = Your Government Gateway account is not linked to this trust
+trustAlreadyClaimed.heading = Your Government Gateway account is not linked to this trust
 trustAlreadyClaimed.subheading = This trust’s UTR: {0}
-trustAlreadyClaimed.p1 = Another Government Gateway account is linked to it. Please sign in with that account.
+trustAlreadyClaimed.p1 = Sign in with the Government Gatway account that is linked to this trust.
 trustAlreadyClaimed.p2 = If you are unable to do so,
 trustAlreadyClaimed.p2.a = contact the trusts helpline (opens in a new window or tab)
 
